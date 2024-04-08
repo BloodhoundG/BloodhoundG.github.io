@@ -60,6 +60,7 @@
   transform: translate3d(-50%, 8px, 0);
 
   @media screen and (min-width: 1366px) {
+    grid-column: -1/-1;
     left: unset;
     transform: unset;
     right: 13px;
