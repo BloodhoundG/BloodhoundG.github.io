@@ -1,0 +1,99 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+
+  @media screen and (min-width: 1366px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr;
+    gap: 0 20px;
+    margin-top: 60px;
+  }
+}
+
+.promo__title {
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
+  font-family: "Merriweather", serif, "Georgia";
+  margin: 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+
+  @media screen and (min-width: 1366px) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
+
+.promo__title--1 {
+  @media screen and (min-width: 1366px) {
+    display: inline;
+    width: 742px;
+    grid-column: 1/-1;
+    margin-bottom: 65px;
+  }
+}
+
+.promo__title--2 {
+  @media screen and (min-width: 1366px) {
+    grid-column: 6/13;
+    grid-row: 2/3;
+    margin-top: 25px;
+  }
+}
+
+.promo__image {
+  align-self: center;
+}
+
+.promo__image--1 {
+  border-radius: 50%;
+
+  @media screen and (min-width: 1366px) {
+    position: absolute;
+    width: 394px;
+    height: 250px;
+    right: -480px;
+    top: -28px;
+  }
+}
+
+.promo__image--2 {
+  margin: 34px 0 24px;
+
+  @media screen and (min-width: 1366px) {
+    grid-row: 2/4;
+    grid-column: 1/-1;
+    align-self: unset;
+    position: relative;
+    right: 25px;
+    top: -2px;
+    width: 524px;
+    height: 566px;
+    margin: 0;
+  }
+}
+
+.promo__accent {
+  display: contents;
+  color: #ff0000;
+}
+
+.promo__info {
+  padding-top: 44px;
+
+  @media screen and (min-width: 1366px) {
+    grid-row: 3/4;
+    grid-column: 6/13;
+    padding: 0;
+    margin-top: 60px;
+    display: grid;
+    grid-auto-rows: min-content;
+  }
+}

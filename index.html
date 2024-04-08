@@ -1,11 +1,376 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>NefAlex Developer</title>
-    </head>
-    
-    <body>
-        <p>Hello</p>
-    </body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/ticker.css" />
+    <link rel="stylesheet" href="css/promo.css" />
+    <link rel="stylesheet" href="css/info.css" />
+    <link rel="stylesheet" href="css/stages.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/players.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <title>Four Horses Club</title>
+  </head>
+  <body>
+    <section class="hero container">
+      <header class="header">
+        <a class="header__logo" href="#">
+          <svg width="19" height="27">
+            <use href="src/sprite/sprite.svg#horse-figure"></use>
+          </svg>
+          <svg width="19" height="27">
+            <use href="src/sprite/sprite.svg#horse-figure"></use>
+          </svg>
+          <svg width="19" height="27">
+            <use href="src/sprite/sprite.svg#horse-figure"></use>
+          </svg>
+          <svg width="19" height="27">
+            <use href="src/sprite/sprite.svg#horse-figure"></use>
+          </svg>
+          <svg class="header__font-logo" width="146" height="32">
+            <use href="src/sprite/sprite.svg#font-logo"></use>
+          </svg>
+        </a>
+      </header>
+      <h1 class="visually-hidden">Шахматный клуб четыре коня</h1>
+
+      <h2 class="hero__title title">
+        превратите уездный город
+        <span class="hero__shift-word">в столицу</span>
+        <span class="hero__shift-word">земного шара</span>
+      </h2>
+
+      <p class="hero__description">
+        Оплатите взнос на телеграммы для организации Международного васюкинского
+        турнира по шахматам
+      </p>
+
+      <div class="hero__links-wrapper">
+        <a class="hero__link button button--primary" href="#promo">
+          Поддержать шахматную мысль
+        </a>
+
+        <a class="hero__link button button--secondary" href="#info">
+          Подробнее о турнире
+        </a>
+      </div>
+
+      <div class="hero__ticker ticker">
+        <div class="ticker__wrapper">
+          <div class="ticker__item">
+            Дело помощи утопающим — дело рук самих утопающих!
+          </div>
+
+          <div class="ticker__item">
+            Шахматы двигают вперед не только культуру, но и экономику!
+          </div>
+
+          <div class="ticker__item">
+            Лед тронулся, господа присяжные заседатели!
+          </div>
+        </div>
+
+        <div class="ticker__wrapper">
+          <div class="ticker__item">
+            Дело помощи утопающим — дело рук самих утопающих!
+          </div>
+
+          <div class="ticker__item">
+            Шахматы двигают вперед не только культуру, но и экономику!
+          </div>
+
+          <div class="ticker__item">
+            Лед тронулся, господа присяжные заседатели!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo container" id="promo">
+      <h2 class="promo__title promo__title--1">
+        Чтобы поддержать Международный васюкинский турнир
+        <img
+          class="promo__image promo__image--1"
+          width="335"
+          height="213"
+          src="./src/img/promo/many-chess-players-tournament.jpg"
+          alt="Несколько человек учавствуют в шахматном турнире"
+        />
+        посетите лекцию на тему:
+        <span class="promo__accent"> «Плодотворная дебютная идея» </span>
+      </h2>
+
+      <img
+        class="promo__image promo__image--2"
+        width="375"
+        height="402"
+        src="./src/img/promo/bender-play-chess.png"
+        alt="Остап Бендер играет в шахматы"
+      />
+
+      <h2 class="promo__title promo__title--2">
+        и Сеанс
+        <span class="promo__accent">
+          одновременной игры в шахматы на 160 досках
+        </span>
+        гроссмейстера О. Бендера
+      </h2>
+
+      <div class="promo__info info" id="info">
+        <div class="info__text-wrapper">
+          <span class="info__text">Место проведения:</span>
+          <span class="info__highlight">Клуб «Картонажник»</span>
+        </div>
+
+        <div class="info__text-wrapper">
+          <span class="info__text">Дата и время мероприятия:</span>
+          <span class="info__highlight">22 июня 1927г. в 18:00</span>
+        </div>
+
+        <div class="info__text-wrapper">
+          <span class="info__text">Стоимость входных билетов:</span>
+          <span class="info__highlight">20 коп.</span>
+        </div>
+
+        <div class="info__text-wrapper">
+          <span class="info__text">Плата за игру:</span>
+          <span class="info__highlight">50 коп.</span>
+        </div>
+
+        <div class="info__text-wrapper">
+          <span class="info__text"> Взнос на телеграммы:</span>
+          <span class="info__highlight">
+            <span class="info__crossed-text">100 руб.</span>
+            21 руб. 16 коп.
+          </span>
+        </div>
+
+        <a class="info__link link" href="#">
+          По всем вопросам обращаться в администрацию к К. Михельсону
+        </a>
+      </div>
+    </section>
+
+    <section class="stages container">
+      <h2 class="stages__title title">Этапы преображения Васюков</h2>
+
+      <a class="stages__link link" href="#">
+        Будущие источники обогащения васюкинцев
+      </a>
+
+      <img
+        class="stages__image"
+        src="src/img/stages/biplane.png"
+        width="341"
+        height="215"
+        alt="Самолёт конструкции биплан"
+      />
+
+      <div class="stages__carousel carousel">
+        <ul
+          class="stages__carousel-list carousel__list"
+          id="stages-carousel-list"
+        >
+          <li class="carousel__item stages__carousel-item">
+            <span class="carousel__item-description">
+              <span class="stages__carousel-count"></span>
+              Строительство железнодорожной магистрали Москва-Васюки
+            </span>
+          </li>
+
+          <li class="carousel__item stages__carousel-item">
+            <span class="carousel__item-description">
+              <span class="stages__carousel-count"></span>
+              Открытие фешенебельной гостиницы «Проходная пешка» и других
+              небоскрёбов
+            </span>
+          </li>
+
+          <li class="carousel__item stages__carousel-item">
+            <span class="carousel__item-description">
+              <span class="stages__carousel-count"></span>
+              Поднятие сельского хозяйства в радиусе на тысячу километров:
+              производство овощей, фруктов, икры, шоколадных конфет
+            </span>
+          </li>
+
+          <li class="carousel__item stages__carousel-item">
+            <span class="carousel__item-description">
+              <span class="stages__carousel-count"></span>
+              Строительство дворца для турнира
+            </span>
+          </li>
+
+          <li class="carousel__item stages__carousel-item">
+            <span class="carousel__item-description">
+              <span class="stages__carousel-count"></span>
+              Размещение гаражей для гостевого автотранспорта
+            </span>
+          </li>
+
+          <li class="carousel__item stages__carousel-item">
+            <span class="carousel__item-description stages__item-description">
+              <span class="stages__carousel-count"></span>
+              Постройка сверхмощной радиостанции для передачи всему миру
+              сенсационных результатов
+            </span>
+          </li>
+
+          <li class="carousel__item stages__carousel-item">
+            <span class="carousel__item-description">
+              <span class="stages__carousel-count"></span>
+              Создание аэропорта «Большие Васюки» с регулярным отправлением
+              почтовых самолётов и дирижаблей во все концы света, включая
+              Лос-Анжелос и Мельбурн
+            </span>
+          </li>
+        </ul>
+
+        <div class="stages__carousel-interface carousel__interface">
+          <button
+            class="carousel__button carousel__button--left"
+            type="button"
+            disabled
+          >
+            <svg width="10" height="18">
+              <use href="src/sprite/sprite.svg#tick-left"></use>
+            </svg>
+          </button>
+
+          <div class="carousel__pagination">
+            <button
+              class="carousel__pagination-item carousel__pagination-item--current"
+              id="carousel-pagination-item0"
+              type="button"
+            ></button>
+            <button
+              class="carousel__pagination-item"
+              id="carousel-pagination-item1"
+              type="button"
+            ></button>
+            <button
+              class="carousel__pagination-item"
+              id="carousel-pagination-item2"
+              type="button"
+            ></button>
+            <button
+              class="carousel__pagination-item"
+              id="carousel-pagination-item3"
+              type="button"
+            ></button>
+            <button
+              class="carousel__pagination-item"
+              id="carousel-pagination-item4"
+              type="button"
+            ></button>
+            <button
+              class="carousel__pagination-item"
+              id="carousel-pagination-item5"
+              type="button"
+            ></button>
+            <button
+              class="carousel__pagination-item"
+              id="carousel-pagination-item6"
+              type="button"
+            ></button>
+          </div>
+
+          <button
+            class="carousel__button carousel__button--right"
+            type="button"
+          >
+            <svg width="10" height="18">
+              <use href="src/sprite/sprite.svg#tick-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="players container">
+      <h2 class="players__title title">Участники турнира</h2>
+      <div class="players__carousel carousel">
+        <ul class="carousel__list" id="players-carousel-list"></ul>
+      </div>
+      <div class="carousel__interface players__carousel-interface">
+        <button class="carousel__button carousel__button--left" type="button">
+          <svg width="10" height="18">
+            <use href="src/sprite/sprite.svg#tick-left"></use>
+          </svg>
+        </button>
+
+        <div class="players__count">
+          <span class="players__count-current"></span>
+          <span class="players__count-all"></span>
+        </div>
+
+        <button class="carousel__button carousel__button--right" type="button">
+          <svg width="10" height="18">
+            <use href="src/sprite/sprite.svg#tick-right"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__ticker ticker">
+        <div class="ticker__wrapper">
+          <div class="ticker__item">
+            Дело помощи утопающим — дело рук самих утопающих!
+          </div>
+
+          <div class="ticker__item">
+            Шахматы двигают вперед не только культуру, но и экономику!
+          </div>
+
+          <div class="ticker__item">
+            Лед тронулся, господа присяжные заседатели!
+          </div>
+        </div>
+
+        <div class="ticker__wrapper">
+          <div class="ticker__item">
+            Дело помощи утопающим — дело рук самих утопающих!
+          </div>
+
+          <div class="ticker__item">
+            Шахматы двигают вперед не только культуру, но и экономику!
+          </div>
+
+          <div class="ticker__item">
+            Лед тронулся, господа присяжные заседатели!
+          </div>
+        </div>
+      </div>
+      <p class="footer__text">
+        Все персонажи, события и цитаты являются вымышленными и не принадлежат
+        создателям сайта. С подробностями можно познакомиться в главе XXXIV
+        романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
+      </p>
+    </footer>
+
+    <template id="player-item">
+      <li class="carousel__item players__carousel-item">
+        <div class="players__carousel-wrapper">
+          <img
+            class="players__user-photo"
+            src="src/img/players/player-photos/user-photo.png"
+            height="228"
+            width="225"
+            alt="Фотография участника"
+          />
+        </div>
+        <div class="players__user-name"></div>
+        <div class="players__user-rank"></div>
+        <a class="players__user-link link" href="#">Подробнее</a>
+      </li>
+    </template>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>

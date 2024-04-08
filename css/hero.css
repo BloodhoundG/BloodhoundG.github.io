@@ -1,0 +1,109 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 812px;
+  background-image: url("../src/img/hero/background-image.png");
+
+  @media screen and (min-width: 1366px) {
+    background-image: url("../src/img/hero/background-image-1366.png");
+    background-position: top right;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: unset;
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-image: url("../src/img/hero/background-image-1920.png");
+    background-position: top center;
+  }
+
+  background-position: bottom 17px center;
+  background-repeat: no-repeat;
+  background-color: #cfbb99;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../src/img/background.png");
+  opacity: 0.1;
+}
+
+.hero__title {
+  margin: 40px 0 0;
+
+  @media screen and (min-width: 1366px) {
+    grid-column: 1/6;
+    width: 542px;
+
+    font-size: 60px;
+    line-height: 66px;
+  }
+}
+
+.hero__shift-word {
+  display: flex;
+}
+
+.hero__shift-word:first-child {
+  justify-content: center;
+}
+
+.hero__shift-word:last-child {
+  justify-content: end;
+}
+
+.hero__description {
+  margin: 24px 0 0;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+
+  @media screen and (min-width: 1366px) {
+    grid-column: 1/6;
+
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+
+.hero__links-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 32px;
+
+  @media screen and (min-width: 1366px) {
+    grid-column: 1/6;
+
+    flex-direction: row;
+    margin-bottom: 190px;
+    margin-top: 21px;
+  }
+}
+
+.hero__link {
+  text-decoration: none;
+  font-family: "GolosText", sans-serif, "Arial";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 13px 20px;
+
+  @media screen and (min-width: 1366px) {
+    width: 50%;
+    padding: 13px 50px;
+    text-align: center;
+  }
+}
+
+.hero__ticker {
+  bottom: 0;
+  left: 0;
+}

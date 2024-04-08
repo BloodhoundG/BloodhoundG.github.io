@@ -1,0 +1,20 @@
+.footer {
+  position: relative;
+  background-color: #e9ded4;
+}
+
+.footer__ticker {
+  top: 0;
+  left: 0;
+}
+
+.footer__text {
+  line-height: 19px;
+  margin: 0;
+  padding: 78px 20px 60px;
+  opacity: 0.6;
+
+  @media screen and (min-width: 1366px) {
+    padding: 101px 72px 60px;
+  }
+}

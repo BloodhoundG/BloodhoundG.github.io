@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-top: 18px;
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 26px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    height: fit-content;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+
+  @media screen and (min-width: 1366px) {
+    gap: 5px;
+  }
+}
+
+.header__font-logo {
+  width: 128px;
+  height: 32px;
+
+  @media screen and (min-width: 1366px) {
+    width: 147px;
+    height: 36px;
+  }
+}
